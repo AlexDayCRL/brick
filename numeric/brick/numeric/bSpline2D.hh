@@ -189,6 +189,14 @@ namespace brick {
                                Vector2D<FloatType> corner0,
                                Vector2D<FloatType> corner1);
 
+      /**
+       * This member function returns the position of the control
+       * points for the spline
+       * 
+       * @return Array2D<Type> This array contains all of the 
+       * control points for the spline 
+       */
+      void getControlPoints(Array2D<Type>& controlPoints) const;
 
       /**
        * Indicates whether the spacing of the spline control grid is

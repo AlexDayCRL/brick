@@ -302,6 +302,15 @@ namespace brick {
       }
     }
 
+    // This member queries the B-Spline control grid.
+    template<class Type, class FloatType>
+    void
+    BSpline2D<Type, FloatType>::
+    getControlPoints(Array2D<Type>& controlPoints) const
+    {
+      controlPoints = m_controlGrid.copy();
+    }
+
 
     // This member queries the size of the underlying B-Spline
     // control grid.
